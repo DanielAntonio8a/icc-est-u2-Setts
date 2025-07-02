@@ -23,8 +23,11 @@ public class Contacto {
 
     @Override
     public String toString() {
-        return "Contacto []";
+        return nombre+" "+apellido+" | "+telefono;
     }
-    
-    
+
+    @Override // Hash code es Encriptacion
+    public int hashCode(){
+        return nombre.hashCode() + apellido.hashCode()+ telefono.hashCode();
+    }
 }
