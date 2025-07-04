@@ -80,12 +80,12 @@ public class Ejercicios {
         System.out.println("textos repetidos:" + palabrasTexto1);
 
         // -----------------------------
-        // Usando el operador +
-        String textoConcatenado1 = texto1 + texto2;
-        System.out.println("Concatenación con +: " + textoConcatenado1.length());
+        // Usando el método concat()
+        String textoConcatenado = texto1.concat(texto2);
+        System.out.println("Concatenación con concat(): " + textoConcatenado); // Salida: Hola Mundo
 
-        double porcentaje = (palabrasTexto1.size() * 100) / textoConcatenado1.length();
+        double porcentaje = (palabrasTexto1.size() * 100) / 24;
         System.out.println("Palabras repetidas: " + palabrasTexto1.size());
-        System.out.println("Porcentaje palabras repetidas: " + porcentaje);
+        System.out.println("Porcentaje palabras repetidas: " + porcentaje + " %");
     }
 }
